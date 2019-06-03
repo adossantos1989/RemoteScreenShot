@@ -19,6 +19,12 @@ FlagpingOK=0
 nbmax=0
 version=0.1
 
+# ** Efface les anciens fichiers
+if [ -f ../screen.csv ]
+	then
+		rm ../screen.csv
+	fi
+
 echo "Version" $version
 # ** TANT QUE on as pas trouvé les 4 écrans FAIRE
 while [ $cpt != 4 ] && [ $nbmax != 10 ]

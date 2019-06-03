@@ -22,6 +22,26 @@ indcolone=1
 charP=p
 flagcpt=0
 
+# ** Efface les anciennes captures
+if [ -f /tmp/screenshot1.png ]
+	then
+		rm /tmp/screenshot1.png
+	fi
+
+if [ -f /tmp/screenshot2.png ]
+	then
+		rm /tmp/screenshot2.png
+	fi
+
+if [ -f /tmp/screenshot3.png ]
+	then
+		rm /tmp/screenshot3.png
+	fi
+
+if [ -f /tmp/screenshot4.png ]
+	then
+		rm /tmp/screenshot4.png
+	fi
 
 # ** TANQUE flagcpt != 1 FAIRE
 while [ $flagcpt != 1 ]
